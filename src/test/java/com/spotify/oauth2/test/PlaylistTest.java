@@ -1,16 +1,16 @@
 package com.spotify.oauth2.test;
 
-import com.spotify.oauth2.api.ApplicationAPi.PlaylistApi;
-import com.spotify.oauth2.api.StatusCode;
-import com.spotify.oauth2.pojo.Error;
-import com.spotify.oauth2.pojo.Playlist;
-import com.spotify.oauth2.utils.DataLoader;
+import com.spotify.oauth.api.ApplicationAPi.PlaylistApi;
+import com.spotify.oauth.api.StatusCode;
+import com.spotify.oauth.pojo.Error;
+import com.spotify.oauth.pojo.Playlist;
+import com.spotify.oauth.utils.DataLoader;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-import static com.spotify.oauth2.api.ApplicationAPi.PlaylistApi.post;
-import static com.spotify.oauth2.utils.FakerUtils.generateDescription;
-import static com.spotify.oauth2.utils.FakerUtils.generateName;
+import static com.spotify.oauth.api.ApplicationAPi.PlaylistApi.post;
+import static com.spotify.oauth.utils.FakerUtils.generateDescription;
+import static com.spotify.oauth.utils.FakerUtils.generateName;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
